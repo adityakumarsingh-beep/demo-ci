@@ -11,13 +11,13 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t yourdockerhub/devops-node-app .'
+                sh 'docker build -t adityakumar143/devops-node-app .'
             }
         }
 
         stage('Push Docker Image') {
             steps {
-                sh 'docker push yourdockerhub/devops-node-app'
+                sh 'docker push adityakumar143/devops-node-app'
             }
         }
 
